@@ -343,6 +343,15 @@
     justify-content: space-around;
     align-items: center;
     }
+.computericon{
+   font-size: 50%;
+}
+.maintenanceicon{
+    font-size: 50%;
+}
+.faulticon{
+    font-size: 50%;
+}
 #registration{
     width: 95%;
     height: 20rem;
