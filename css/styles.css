@@ -1,0 +1,364 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;	
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --maincolor: rgb(233, 64, 64);
+    --seccolor:rgb(58, 209, 96);
+}
+.navbar{
+    width: 100%;
+    color: white;
+    background-color: var(--maincolor);
+    display: flex;
+    align-items: center;
+    gap: 20%;
+}
+.navbar ul.navtitle{
+    list-style: none;
+    display: flex;   
+    /* align-items: center; */
+    padding-left: 3rem;
+    column-gap: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 3rem;
+}
+.navtitle :nth-child(2){
+    opacity: 50%;
+}
+.navtitle :nth-child(2):hover{
+    opacity: 90%;
+    transition: all 0.3s;
+}
+#navtab{
+    display: flex;
+}
+#navtab li{
+    padding: 1rem;
+    list-style: none;
+}
+.navbar ul a{
+    color: white;
+    text-decoration: none;
+}
+#navtab li a:hover{
+    color: rgb(248, 212, 212);   
+}
+#navtab li:active{
+    background-color: white;
+    color: var(--maincolor);
+}
+.topbody{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    /* background: rgb(238, 236, 236); */
+    border: 1px solid rgb(194, 192, 192);
+    box-shadow: 1px 1px rgb(219, 218, 218);
+}
+.topbody img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.topbody div{
+    position: absolute;
+    left: 2.5rem;
+    top: 4.5rem;
+    width: 30%;
+    height: 20vh;
+}
+.topbody div h1{
+    color: var(--maincolor);
+    font-family: Verdana;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0.7rem 0;
+}
+.topbody div p{
+    font-size: 1.3rem;
+    color: rgb(58, 56, 56);
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+.topbody div button{
+    padding: 8px 7px;
+    color: white;
+    background: var(--seccolor);
+    border: none;
+    border-radius: 3px;
+    margin: 1rem 0.5rem;
+}
+.topbody div button:hover{
+    box-shadow: 1px 2px 1px gray;
+    transform: scale(1.05); 
+}
+.topbody div button:active{
+    color: rgb(219, 213, 213);
+}
+.topbody div :nth-child(4){
+  background: var(--maincolor);
+}
+#check{
+    display: none;
+}
+.bar_icon{
+    display: none;
+}
+#sidebar{
+    display: none;
+}
+.aboutosms{
+    /* width: 100%; */
+    height: auto;
+    padding: 1.5rem;
+    margin: 1rem 4rem;
+    background: rgb(209, 209, 212);
+    text-align: center;
+    box-shadow: 1px black;
+    border-radius: 10px;
+}
+.aboutosms h1{
+    margin-bottom: 1rem;
+}
+#ourservices{
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+.computericon{
+    color: green;
+}
+.maintenanceicon{
+    color: rgb(7, 147, 202);
+}
+.faulticon{
+    color: rgb(67, 114, 133);
+}
+.ourservices h4{
+    margin-top: 10px;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#registration{
+    width: 35%;
+    height: 18rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+#registration div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 75%;
+}
+.regchild label{
+    font-size: 1.1rem;
+}
+.regchild label input{
+    font-size: 0.9rem;
+    width: 100%;
+    height: 1.5rem;
+}
+.regchild label p{
+    font-size: x-small;
+    opacity: 55%;
+    margin-top: 1px;
+}
+#signup_btn{
+    height: 1.9rem;
+    /* margin: auto; */
+    margin-top: 1rem;
+    background: var(--maincolor);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+}
+#signup_btn:hover{
+    box-shadow: 1px 2px 1px gray;
+    transform: scale(1.05); 
+}
+#signup_btn:active{
+    background-color:rgb(194, 54, 54);
+}
+.happycustomers{
+    background-color: var(--maincolor);
+    width: 100%;
+    height: 17rem;
+    display: flex;
+    padding-top: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.happycustomers h2{
+    color: white;
+    text-align: center;
+}
+.customers{
+    display: flex;
+    justify-content: space-between;
+    width:60%;
+    margin: auto;
+}
+.customers div{
+    background-color: white;
+    width: 20%;
+    height: 9.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.customers img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+.customers div h5{
+    text-align: center;
+    opacity: 85%;
+}
+.customers div p{
+    font-size: 0.5rem;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* for mobile responsive */
+@media (max-width: 786px){
+.navbar{
+   justify-content: space-between;
+   position: relative;
+}
+    
+.navbar ul.navtitle{
+    padding-left: 3rem;
+}
+.navtitle li:last-child{
+    display: none;
+}
+.bar_icon{
+    display: block;
+    margin: 3rem;
+}
+#sidebar{
+    position: fixed;
+    top: 1rem;
+    right: 0%;
+    height: 100%;
+    width: 70%;
+    /* margin-left: 40%; */
+    background-color: rgba(255, 255, 255, 0.815);
+    backdrop-filter: blur(10px);
+    color: var(--maincolor);
+    display: flex;
+    left: 100%;
+    box-shadow: -10px 0 10px rgba(214, 175, 175, 0.1);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 3rem;
+    z-index: 999;
+    transition:all .5s ease;
+}
+#sidebar li{
+    width: 100%;
+    border-bottom: 0.5px solid rgb(235, 212, 212);
+}
+#sidebar li a{
+    width: 100%;
+    text-decoration: none;
+    color: red;
+    display: inline-block;
+    padding: 1rem 0;
+    padding-left: 2rem;
+    
+}
+#navtab{
+ display: none;
+}
+.topbody{
+    height: 50vh;
+    
+}
+.topbody img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.topbody div{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size:large;
+    background-color: rgba(255, 255, 255, 0);
+    /* backdrop-filter: blur(1px); */
+}
+.topbody div p{
+    position: relative;
+    top: 100%;
+}
+#close_icon{
+    position: absolute;
+    left: 1.1rem;
+    top: 13px;
+    font-size:x-large;
+}
+.aboutosms{
+    /* width: 100%; */
+    height: auto;
+    padding: 1rem;
+    margin: 1rem 1rem;
+    background: rgb(209, 209, 212);
+    text-align: center;
+    box-shadow: 1px black;
+    border-radius: 10px;
+}
+.ourservices{
+    width: 100%;
+    height: 60vh;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    }
+#registration{
+    width: 95%;
+    height: 20rem;
+}
+.happycustomers{
+    height: 100vh;
+}
+.customers{
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+.happycustomers .customers div{
+    width: 70%;
+}
+/* .text h1{
+    font-size: large;
+} */
+}
