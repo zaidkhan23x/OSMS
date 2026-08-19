@@ -41,7 +41,7 @@
             <li><a href="#ourservices">Service</a></li>
             <li><a href="#registration">Registration</a></li>
             <li><a href="#">Login</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#contact_us">Contact</a></li>
         </ul>
             <div class="topbody">
                 <div class="text">
@@ -91,15 +91,15 @@
         </div>
         <!-- Registration Page  -->
         <h2 style="text-align: center; margin: 1rem 0;">Registration</h2>
-        <div id="registration">
-            <div class="regchild">
+        <form id="registration">
+            <div class="form_container">
             <label >Name: <br> <input type="text" name="name" placeholder="Enter your name"></label>
             <label id="email">Email: <br> <input type="email" name="email" placeholder="Enter your email">
             <p>We'll never shere your email with enyone else</p>  </label>
             <label >New Password: <br><input type="password" name="password" placeholder="Enter your password"></label>
             <label> <input type="submit" value="Sign up" id="signup_btn"></label> 
         </div>   
-        </div>
+        </form>
         <div class="happycustomers">
             <h2>Happy Customers</h2>
          <div class="customers">
@@ -133,6 +133,14 @@
             </div>
          </div>
         </div>
+         <h2 style="text-align: center; margin: 1rem 0;">Contact Us</h2>
+        <form id="contact_us" action="">
+            <div class="form_container">
+            <label >Subject*: <br> <input type="text" name="text" placeholder="Enter your topic" required></label>
+            <label >Enter your comments*: <br><textarea required rows="4"  name="textarea" placeholder="Say something"></textarea></label>
+            <label> <input type="submit" value="Send" id="send_btn"></label> 
+        </div>   
+        </form>
         <footer class="container-fluid bg-dark text-white mt-2" style="border-top: 3px solid #DC3545;">
     <div class="container">
       <!-- Start Footer Container -->
@@ -157,7 +165,7 @@
       </div> <!-- End Footer Row -->
     </div> <!-- End Footer Container -->
   </footer> <!-- End Footer -->
-    
+   
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
